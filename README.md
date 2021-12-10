@@ -1,7 +1,7 @@
-1. Вывод контактов в консоль: http://joxi.ru/xAe91zZsbyXopA
+1. Вывод контактов в консоль: https://monosnap.com/file/vX85wKQSHdowWVDrpYshyRrsXZvCJm
 
-2. Поиск контакта по id: http://joxi.ru/8237k1GiaB8Ll2
+2. Поиск контакта по id: https://monosnap.com/file/Nmsz3KgANwLsG6vcvPvhrhRBldVDaC
 
-3. Добавление контакта в список: http://joxi.ru/RmzPqpjUjbM49A
+3. Добавление контакта в список: https://monosnap.com/file/BQOPkMa5Frn8yfJQ9bVoLxemcAb3N9
 
-4. Удаление контакта: http://joxi.ru/52ajkqWTgykznA
+4. Удаление контакта: https://monosnap.com/file/Xlg13XkINgJed9DkNylwxgFIYq9QUM
