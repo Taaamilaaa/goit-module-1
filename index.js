@@ -27,12 +27,8 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
       break;
 
     case "get":
-      const contact = await getContactById(id);
-      console.log(`${chalk.bgYellow.black("Your contact:")}${chalk.blue(
-        `${contact.name}`
-      )}
-        ${chalk.magenta("email:")}${chalk.green(`${contact.email}`)}
-        ${chalk.magenta("phone:")}${chalk.green(`${contact.phone}`)}`);
+      const contact = await getContactById(id);     
+        console.log(contact);
       break;
 
     case "add":

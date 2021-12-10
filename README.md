@@ -1,4 +1,4 @@
-1. Вывод контактов в консоль: http://joxi.ru/a2X83djclO49e2
+1. Вывод контактов в консоль: http://joxi.ru/xAe91zZsbyXopA
 
 2. Поиск контакта по id: http://joxi.ru/8237k1GiaB8Ll2
 

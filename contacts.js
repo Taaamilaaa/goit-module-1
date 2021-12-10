@@ -25,25 +25,36 @@ const listContacts = async () => {
 
 const getContactById = async (contactId) => {
   const contacts = await readContacts();
-  return contacts.find((contact) => contact.id === contactId);
+  const contact = contacts.find((contact) => contact.id === contactId);
+  if (contact) {
+    return (`${chalk.bgGreen.black("Your contact:")}${chalk.blue(
+        `${contact.name}`
+      )}
+        ${chalk.magenta("email:")}${chalk.green(`${contact.email}`)}
+        ${chalk.magenta("phone:")}${chalk.green(`${contact.phone}`)}`)
+  }else{return (`${chalk.bgYellow.black(`Contact with id ${contactId} not found!!!`)}`)}
 };
 
 const removeContact = async (contactId) => {
+  
   const contacts = await readContacts();
+  const deletedCont = contacts.find((contact) => contact.id === contactId);
+  
   const otherContacts = contacts.filter((contact) => contact.id !== contactId);
-  const deletedCont = await getContactById(contactId);
+  
   await fs.writeFile(
     path.join(__dirname, "db", "contacts.json"),
     JSON.stringify(otherContacts, null, 4)
   );
   if (deletedCont) {
-    return `${chalk.bgRed.bold.black(
+   
+    return (`${chalk.bgRed.bold.black(
       `Contact with id: ${deletedCont.id} DELETED!!!`
     )}
         ${chalk.bold.red("Deleted contact:")}
         ${chalk.yellow("name:")}${chalk.blue(`${deletedCont.name}`)}
         ${chalk.yellow("email:")}${chalk.blue(`${deletedCont.email}`)}
-        ${chalk.yellow("phone:")}${chalk.blue(`${deletedCont.phone}`)}`;
+        ${chalk.yellow("phone:")}${chalk.blue(`${deletedCont.phone}`)}`);
   } else {
     return `${chalk.blue(
       `Contact with id: ${chalk.red(`${contactId}`)} not found!!! `
