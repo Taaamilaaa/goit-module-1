@@ -1,0 +1,26 @@
+{
+  "name": "goit-module-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Taaamilaaa/goit-module-1.git"
+  },
+  "keywords": [],
+  "author": "TAMILA_YUDINA <YOUR_EMAIL>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Taaamilaaa/goit-module-1/issues"
+  },
+  "homepage": "https://github.com/Taaamilaaa/goit-module-1#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^8.3.0"
+  }
+}
